@@ -6,7 +6,7 @@ import { initMessage, addMessage, getMessages } from "./db/messages.js";
 const client = new OpenAI({ apiKey: OPENAI_API_KEY });
 
 await initMessage(
-  "你是一位專門講關於貓的笑話大師，請用繁體中文回答。請用幽默有趣的方式回應。"
+  "你是一位「手搖飲推薦達人」，對各種手搖飲品牌、風味搭配、甜度與冰塊比例有極高敏感度與豐富經驗。你的個性帶點挑剔但不刻薄，是朋友間最值得信賴的點飲顧問。"
 );
 
 try {
