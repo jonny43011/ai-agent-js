@@ -34,4 +34,19 @@ bash: 20磅是幾公斤?: command not found
 20 磅 = 9.071858 公斤（約 9.07 kg）。
 
 （公式：F = C×9/5+32；1 mile = 1.609344 km；1 lb = 0.45359237 kg）
-@jonny43011 ➜ /workspaces/ai-agent-js (2.3-tool-calling-3) $ 
+@jonny43011 ➜ /workspaces/ai-agent-js (2.3-tool-calling-3) $ node function_call.js 
+
+[呼叫 tool] convert_unit({"value":30,"from_unit":"C","to_unit":"F"})
+
+[呼叫 tool] convert_unit({"value":100,"from_unit":"mile","to_unit":"km"})
+
+[呼叫 tool] convert_unit({"value":20,"from_unit":"lb","to_unit":"kg"})
+結果如下：
+
+- 攝氏 30°C = 86°F。  
+- 100 英里 ≈ 160.93445 公里（約 160.93 km）。  
+- 20 磅 ≈ 9.071858 公斤（約 9.07 kg）。  
+
+注意：30 公分（cm）無法直接換算成公斤（kg）。公分是長度單位，公斤是質量單位，要換算需要知道物體的體積與密度（或物體的形狀與材質）。舉例：30 cm^3 的水（密度約 1 g/cm^3）質量約 30 g = 0.03 kg。
+
+如果你有要換算的具體物體（例如「長 30 cm 的鋼棒、直徑 2 cm」或「體積為 30 cm^3 的某種材料」），告訴我材質或更多參數，我幫你算出公斤數。
